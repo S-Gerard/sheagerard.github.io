@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta content="ie=edge" http-equiv="X-UA-Compatible">
+<title>CSCI 443/543 - User Interface Design - Spring 2023</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link rel="stylesheet" href="../../assets/css/wa_style.css">
+<link rel="stylesheet" href="../../assets/css/navstyle.css">
+<link href="https://fonts.gstatic.com" rel="preconnect">
+</head>
+
+<body>
+
+
+//<div class="main">
+
+<div id="root">
+
+<div class="sidenav">
+  <img src="../../assets/img/SwiftLogo.png" width="110" height="110" style="padding-left: 10px; padding-top: 0px;">
+  <a href="#top">Problem</a>
+  <a href="#early-design">Early Design</a>
+  <a href="#storyboard">Storyboard</a>
+  <a href="#design_crits">Design Crits</a>
+  <a href="#prototype">Prototype</a>
+  <a href="#user_testing">User Testing</a>
+</div>
+
+<header id="top" class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i" style="background-color: maroon;" >
+
+	<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="background-color: maroon; ">
+	<div class="MuiToolbar-root MuiToolbar-regular css-8p5sgb" style="background-color: maroon; ">	
+	<div class="MuiBox-root css-1p5pnqt" role="navigation" aria-label="Primary">
+
+
+	<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1f5vq29" href="/courses/cse440/22sp/" tabindex="0">
+	<div class="MuiBox-root css-0">CSCI 443/543 - User Interface Design - Spring 2023</div>
+	<span class="MuiTouchRipple-root css-w0pj6f">	
+	</span>
+	</a>
+	<div class="MuiBox-root css-i9gxme">	
+	</div>
+
+	<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-a6kcvm" href="../../index.html" tabindex="0">
+	<div class="MuiBox-root css-11wbtq8">Projects</div>
+	<span class="MuiTouchRipple-root css-w0pj6f">	
+	</span>
+	</a>
+
+
+	</div>
+	</div>
+	</div>
+</header>
+
+<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="font-size: 18px;">
+<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gop1xy">
+<div class="MuiBox-root css-13o7eu2">
+<div class="MuiBox-root css-qwy28t" role="main">
+
+
+<h1>Swift</h1>
+<div class="MuiBox-root css-m507i9">
+<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">Empowering communities through trusted service-sharing.</p>
+</div>
+	
+<h2 id="team-members">Team Members</h2>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		
+		<div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+			<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-s18byi">
+				<div class="MuiCardContent-root css-1qw96cp">
+					<a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1td92wh" href="./projects/project_detail.html">
+						<div class="css-j7qwjs">Shea Gerard<img src="./images/Shea.png" alt="Photo of Shea Gerard" width="150">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+</div>
+
+<br>
+<h2 id="problem-and-design-overview">Problem</h2>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+	
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-8 css-1718kzu">
+	<p>Swift is a mobile application for service sharing that allows users to quickly find services in their area and make money offering services to other users. 
+		Transactions between users are processed through an escrow system, 
+		and users can rate services. The app's design prioritized user needs, technical requirements, and business goals, with 
+		emphasis on simplicity and trustworthiness. Registration requirements for becoming a Swifter are separate, with ID verification 
+		and background checks, and a Swifter Dashboard was created to manage and complete services</p>
+
+	</div>
+
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-8 css-1718kzu">	
+		<div class="MuiBox-root css-1vp8jwk">	
+			<div class="MuiBox-root css-1vp8jwk">	
+				<div class="MuiBox-root css-1j8t7mm">	
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">	
+						<img src="./images/swift_home.png" style="max-height:400px;max-width:100%">	
+						<figcaption style="font-size: 14px;"><center><em>Home screen</em></center></figcaption>
+						</div>	
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+	
+</div>
+
+<h2 id="early-design">Early Design</h2>
+<p>In the early stages of our design research, our team focused on identifying potential users of a service-sharing application and 
+	determining the essential features they would require. Our objective was to investigate whether businesses would be interested 
+	in a platform to advertise and manage their services or if the application would be more suited for individuals offering services 
+	in their local community.</p>
+<p>We started by asking ourselves if businesses would have a reason to use a third-party application to manage their work or if they 
+	were content with their current methods. To gain insight, we sought to understand what features businesses would need to manage 
+	their work more efficiently. Similarly, we explored how customers currently hire services, whether they prefer businesses or local 
+	individuals, and if they would trust strangers from the community if they had a reliable service-sharing application with background 
+	checks and verification.</p>
+<p>To gather user feedback, we employed both interviews and questionnaires. Our interviews were open-ended and aimed at understanding 
+	how users currently search for or offer services. We conducted three interviews, mainly with friends and family members. The 
+	questionnaire was designed to reach a larger audience, and we analyzed statistics from multiple-choice and rating questions.</p>
+<p>Our questions focused on the convenience of current service searching methods, satisfaction with current methods, preference for hiring businesses or 
+	individuals, and what would be needed to trust individuals. For business owners and individuals offering services, we also inquired 
+	about their satisfaction with current management methods and their willingness to use a third-party platform.</p>
+
+<h3 id="key-insights">Key Insights</h3>
+
+<h4><em>1. Trusting Strangers</em></h4>
+	<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+			<p>We discovered that users were comfortable hiring people they did not know, provided they had undergone background checks 
+				and had positive reviews. In fact, many preferred hiring local individuals over businesses. Since customers need to trust 
+				the identity of individuals they hire, we decided to require that users offering services on the app will need to submit 
+				their ID so that their name and date of birth can be verified. They also need to submit their social security number so 
+				that a background check can be performed.</p>
+		</div>
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/trust.png" style="max-height:300px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Questionnaire results on hiring businesses versus individuals.</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+<h4><em>2. Businesses Content with Current Methods</em></h4>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<p>Businesses did not trust third party platforms to help them manage their services and were satisfied with their current methods of
+			advertising and communicating with customers. Based on this discovery, we decided that the users offering services will likely be
+			 individuals not operating under a business. Based on the interviews and questionnaires, there doesn’t seem to be enough incentive
+			  for businesses to host their services on third party platforms.</p>
+	</div>
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+	<div class="MuiBox-root css-1vp8jwk">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1j8t7mm">
+				<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+					<img src="./images/businesses.png" style="max-height:300px;max-width:100%">
+					<figcaption style="font-size: 14px;"><center><em>Questionnaire results on current customer communcation method satisfaction.</em></center></figcaption>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<h4><em>3. Service Management Functionality</em></h4>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<p>Individuals offering services were interested in a platform to help manage their work-related tasks. To accommodate this we 
+			decided to create a section of the app called the Swifter Dashboard. The dashboard should allow them to accept or decline 
+			services, edit the details of a service, send a custom invoice to the customer, add attachments. </p>	
+		</div>
+
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/management.png" style="max-height:300px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Questionnaire results on need for work management functionality.</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- 	STORYBOARD SECTION -->
+
+<h2 id="storyboard">Storyboard</h2>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+<p>We started off with a rough paper prototype of our idea. Our paper prototype served as a foundational blueprint for our subsequent 
+	design work, enabling us to test and refine our ideas before investing in more complex digital prototypes. The accompanying 
+	illustrations show our early design sketches, along with brief annotations explaining the purpose 
+	and functionality of each screen. By creating a paper prototype at the outset of our design process, we were able to validate our 
+	ideas and ensure that our subsequent design work was grounded in user-centered principles.</p>
+</div>
+	<!-- HOME & BOOKING REQUEST SCREEN -->
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/storyboard1.png" style="max-height:350px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Paper prototype of the Swift home and booking request screen</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<p>The home screen shows the services that have been posted by other users. On this screen, users can select a services to 
+			view more details on it, search for services using the search bar, or filter the services using the filter dropdown. 
+			We also designed a navigation bar on the bottom of the screen to provide quick navigation to the main sections of the app.</p>	
+
+		<p>The booking request form allows users to submit a request when they want to book a service. They fill in the their personal 
+			information and details on the service they need then submit it for the Swifter to review.</p>	
+	</div>
+
+	<!-- SWIFTER DASHBOARD & SERVICE OFFERING SCREEN -->
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/storyboard2.png" style="max-height:350px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Paper prototype of the Swifter dashboard and service offering screen</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<p>The Swifter Dashboard contains the service management tools that many service providers need. Here they can accept or 
+			decline new service booking requests, view in-process or completed services, and view their own listings.</p>	
+
+		<p>Once a customer submits a booking request, the Swifter recieves the service offering. On this screen they can view the 
+			service details and either accept or decline it. We decided to hide some details such as the customer's address for their privacy.</p>	
+	</div>
+
+	<!-- SERVICE MANAGEMENT SCREEN -->
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/storyboard3.png" style="max-height:350px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Paper prototype of the screen for managing an accepted service.</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<p>Once the Swifter accepts a service offering, they can manage the service on this screen. They can get the customer's 
+			signature once they arrive, edit the cost of the service, message the customer, and close the service once they complete it.</p>	
+	</div>
+
+</div>
+
+<!-- 	DESIGN CRIT SECTION -->
+
+<h2 id="design_crits">Design Crits</h2>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+<p>Our iterative design process mandated that we gather user feedback early and often throughout the design cycle. To accomplish this, 
+	we utilized low-fidelity prototypes and engaged in a variety of design critiques (crits) with our classmates and instructor. During 
+	these design critiques, our peers attempted to complete tasks on our prototype and we took notes on their feedback.
+	Additionally, we conducted a heuristic evaluation with our peers to gain valuable insights into potential usability flaws and areas 
+	for improvement.</p>
+<p>Through our design crits and heuristic evaluations, we gained valuable insights into user behavior. We found that upon logging in, 
+	many users were uncertain about the subsequent steps they needed to take. In addition, there was confusion surrounding how to become 
+	a Swifter and start offering services once users had logged in. Even after successfully listing a service, users reported feeling 
+	uncertain about the app's expectations for the service.  These affected changes to our designs in the following ways:</p>
+
+<h4><em>1. Created a welcome page after creating an account that introduces you to the app.</em></h4>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/welcome.jpg" style="max-height:300px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Post-account creation welcome screen</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<h4><em>2. After registering to be a Swifter, you are immediately brought to the Swifter Dashboard where there is a clear button to create a 
+	new service.</em></h4>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/dashboard_beforevsafter.jpg" style="max-height:300px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Swifter Dashboard before vs after</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<h4><em>3. Created a new flow for the process of performing the service. The app now walks the Swifter through the steps needed.</em></h4>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+		<div class="MuiBox-root css-1vp8jwk">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1j8t7mm">
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+						<img src="./images/flow_before.jpg" style="max-height:300px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>Before</em></center></figcaption>
+						<img src="./images/flow_after.jpg" style="max-height:300px;max-width:100%">
+						<figcaption style="font-size: 14px;"><center><em>After</em></center></figcaption>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- 	HIGH FIDELITY PROTOTYPE SECTION -->
+
+<h2 id="prototype">High-fidelity Prototype</h2>
+<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+<p>After gathering feedback and conducting a heuristic evaluation on our initial prototype attempts, we incorporated most of the 
+	feedback as we refined our design into a high-fidelity prototype. During the early prototyping stages, we faced challenges with using Figma, 
+	and we subsequently switched to Proto.io to overcome these issues. Presented below is a walkthrough of some of the main scenarios and 
+	tasks that users can perform on our app.</p>
+
+<h3 id="resulting-design">Scenario 1:</h3>	
+<p>You just graduated highschool and need to earn some extra money before college starts in the fall. Your dad bought a fancy riding lawn mower two 
+	years ago and he agrees to let you use it if you buy the gas and pay for any maintenance it needs. You decide to offer lawn mowing services to 
+	your neighborhood for the summer.</p>	
+	<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-8 css-1718kzu">	
+		<div class="MuiBox-root css-1vp8jwk">	
+			<div class="MuiBox-root css-1vp8jwk">	
+				<div class="MuiBox-root css-1j8t7mm">	
+					<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">	
+						<img src="./images/scenario1.jpg" style="max-height:100%;max-width:100%">	
+					</div>	
+				</div>	
+			</div>	
+		</div>	
+	</div>
+	<h3 id="resulting-design">Scenario 2:</h3>	
+	<p>You listed your lawn mowing service 4 hours ago and just got notified that another user has requested to book your service. </p>	
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-8 css-1718kzu">	
+			<div class="MuiBox-root css-1vp8jwk">	
+				<div class="MuiBox-root css-1vp8jwk">	
+					<div class="MuiBox-root css-1j8t7mm">	
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">	
+							<img src="./images/scenario2.jpg" style="max-height:100%;max-width:100%">	
+						</div>	
+					</div>	
+				</div>	
+			</div>	
+		</div>
+	<h3 id="resulting-design">Scenario 3:</h3>	
+	<p>It is two weeks before Christmas and your parents tell you they are coming to town. Between work and your child's extracurricular activities, 
+		you don't know how you will find time to get your house clean before your parent's arrival. You decide to search for some help on Swift. </p>	
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-8 css-1718kzu">	
+			<div class="MuiBox-root css-1vp8jwk">	
+				<div class="MuiBox-root css-1vp8jwk">	
+					<div class="MuiBox-root css-1j8t7mm">	
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">	
+							<img src="./images/scenario3.jpg" style="max-height:100%;max-width:100%">	
+						</div>	
+					</div>	
+				</div>	
+			</div>	
+		</div>
+</div>	
+</div>
+
+<!-- 	USER TESTING SECTION -->
+<h2 id="user_testing">User Testing</h2>
+<p>To conduct user testing on the Swift prototype, six participants with diverse backgrounds were recruited and four individual testing sessions 
+	and one session with a pair of users was conducted. Each user was given a test script and a list of tasks to complete to ensure consistency in testing. 
+	The Swift prototype was tested on a mobile device equipped with screen recording software and a laptop was used to record audio. Throughout the test, 
+	the test monitor recorded notes on each tasks the user worked through in a data capture table. After completing the tasks, participants were asked to 
+	fill out a post-study questionnaire to assess their comfortability using the app and to evaluate the app's overall usability. Additionally, open-ended 
+	post-study interviews were conducted with each participant to gain deeper insights into their experience with the app. The questions included topics 
+	such as what confused them while using the app, what they would like to see added, and which features of the app they found most helpful.By collecting data 
+	from this user testing process, we were able to identify any usability issues and improve the overall design, functionality, and user experience of the app. </p>
+
+<h3>Key Problems Identified</h3>
+<h4><em>1. Availability calendar and date picker was confusing.</em></h4>
+	<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g" style="width:25%;">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1vp8jwk">
+					<div class="MuiBox-root css-1j8t7mm">
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+							<img src="./images/calendar.png" style="max-height:350px;max-width:100%">
+							<figcaption style="font-size: 14px;"><em>New date picker</em></figcaption>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g" style="width:65%;">
+			<p>One main issue that was identified was the availability calendar and date picker on the booking request being confusing for users. 
+				 A possible solution is to combine the interface that shows the Swifter's availability and the fields that allow a date and time 
+				 to be selected. It should also be designed in a way that limits users to only booking the times available by the Swifter. 
+				 The potential re- design shown instead allows users to scroll through dates and select the date they want to view. Once they 
+				 do so they are shown time slots that are available. They can select the time slots they would like to book.</p>
+		</div>
+
+	</div>
+
+	<h4><em>2. Unclear how to leave a rating and call support.</em></h4>
+	<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g" style="width:25%;">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1vp8jwk">
+					<div class="MuiBox-root css-1j8t7mm">
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+							<img src="./images/detail_page.png" style="max-height:350px;max-width:100%">
+							<figcaption style="font-size: 14px;"><em>Service summary page</em></figcaption>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g" style="width:65%;">
+			<p>It was apparent that many of the users were struggling with the task of leaving a rating for the Swifter. 
+				The test notification that was meant to guide them to the rating page was not noticeable enough, causing a great deal of confusion and frustration 
+				among the users. To address this issue, I decided to create a service summary page that would appear for a customer once a service had been completed. 
+				The purpose of this page is to provide customers with a summary of the completed service, and to give them the option to rate the Swifter and call 
+				support if needed. The rating and call support buttons are placed prominently on this page, making them more noticeable and easier to access.
+			</p>
+		</div>
+
+	</div>
+	<h4><em>3. Confusion on what a Swifter is.</em></h4>
+	<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g" style="width:25%;">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1vp8jwk">
+					<div class="MuiBox-root css-1j8t7mm">
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+							<img src="./images/swifter_info.png" style="max-height:350px;max-width:100%">
+							<figcaption style="font-size: 14px;"><em>Details on what a Swifter is.</em></figcaption>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g" style="width:65%;">
+			<p>Many users appeared to be unsure of the role of a Swifter and how they fit into Swift. To address this, I decided to create a more 
+				engaging and visually appealing introduction to what a Swifter is and how they contribute to the app's purpose. While a brief explanation was 
+				provided on the Swifter registration form, it did not seem to capture the users' attention or fully convey the value of being a Swifter. A more eye-catching and interactive 
+				introduction would help users better understand the significance of their role and enhance their experience of becoming a Swifter.
+			</p>
+		</div>
+
+	</div>
+
+	<h4><em>4. Issues with the flow of completing service tasks</em></h4>
+	<div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1tz8m30">
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+			<p>Users encountered issues with updating the cost and attaching photos. A potential solution is to walk the user through these steps more clearly. 
+				To do this I would create a page before the customer sign off page that is dedicated to giving the Swifter a chance to update the cost and attach 
+				photos. Then they can move onto the step of getting the customer's signature. I also decided to add illustrations to add visual appeal and 
+				help draw attention to the task that the Swifter needs to complete.
+			</p>
+		</div>
+
+		<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+			<div class="MuiBox-root css-1vp8jwk">
+				<div class="MuiBox-root css-1vp8jwk">
+					<div class="MuiBox-root css-1j8t7mm">
+						<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+							<img src="./images/service_flow.jpg" style="max-height:400px;max-width:100%">
+							<figcaption style="font-size: 14px;"><center><em>Adjust service details and customer sign off screens</em></center></figcaption>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<h2 id="final_reflection">Final Reflection</h2>
+	<p>During my experience doing user testing, I encountered various challenges and gained valuable insights into the design and usability of the app. 
+		One of the challenges was the limitations of the prototype, which resulted in delays and confusion for users. I also learned that users were more 
+		likely to rely on prompts within the app rather than thoroughly reading the use cases, which was both helpful in identifying potential issues and led to missed tasks.
+		I also discovered that users desired more instructions within the app but did not want to spend significant time reading lengthy explanations. 
+		To address this, I incorporated illustrations into the app to provide visual cues and streamline the user experience. The testing session with a pair 
+		 users was particularly insightful, as they were comfortable sharing their thoughts and helping each other through the tasks, leading to more feedback and ideas.
+		Despite the challenges posed by the prototype limitations, users expressed enthusiasm for the app's purpose, and I believe that a fully functioning app 
+		may have helped resolve some of the issues. Overall, my experience doing user testing was informative and allowed me to improve the design and functionality 
+		of the app.</p>
+
+<!-- ENDING TAGS -->
+
+</div>
+
+</body>
+</html>
